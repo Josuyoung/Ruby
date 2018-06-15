@@ -1,0 +1,93 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (5.2.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    artii (2.1.2)
+    backports (3.11.3)
+    coderay (1.1.2)
+    concurrent-ruby (1.0.5)
+    domain_name (0.5.20180417)
+      unf (>= 0.0.5, < 1.0.0)
+    eu_central_bank (1.2.0)
+      money (~> 6.10.1)
+      nokogiri (~> 1.8.1)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
+    forecast_io (2.0.2)
+      faraday
+      hashie
+      multi_json
+    hashie (3.5.7)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
+    json (2.1.0)
+    method_source (0.9.0)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
+    mini_portile2 (2.3.0)
+    minitest (5.11.3)
+    money (6.10.1)
+      i18n (>= 0.6.4, < 1.0)
+    multi_json (1.13.1)
+    multipart-post (2.0.0)
+    mustermann (1.0.2)
+    netrc (0.11.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    rack (2.0.5)
+    rack-protection (2.0.3)
+      rack
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    sinatra (2.0.3)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.3)
+      tilt (~> 2.0)
+    sinatra-contrib (2.0.3)
+      activesupport (>= 4.0.0)
+      backports (>= 2.8.2)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.3)
+      sinatra (= 2.0.3)
+      tilt (>= 1.3, < 3)
+    sinatra-reloader (1.0)
+      sinatra-contrib
+    stock_quote (2.0.0)
+      json
+      rest-client (~> 2.0.2)
+    thread_safe (0.3.6)
+    tilt (2.0.8)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  artii
+  eu_central_bank
+  forecast_io
+  pry
+  sinatra
+  sinatra-reloader
+  stock_quote
+
+BUNDLED WITH
+   1.16.2
